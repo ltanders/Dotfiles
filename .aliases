@@ -1,0 +1,20 @@
+# Add color to ls 
+if ls --color > /dev/null 2>&1; then 
+    colorflag="--color"
+else 
+    colorflag="-G"
+fi
+
+# Binding shortcuts
+alias l='ls -lahF ${colorflag}'
+alias ll='ls -l ${colorflag}'
+alias la='ls -lA ${colorflag}'
+
+# Alias's for archives
+alias mktar='tar -cvf'
+alias mkbz2='tar -cvjf'
+alias mkgz='tar -cvzf'
+alias untar='tar -xvf'
+alias unbz2='tar -xvjf'
+alias ungz='tar -xvzf'
+
