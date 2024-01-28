@@ -20,7 +20,7 @@ unset GREP_OPTIONS
 
 # Load ~/.extra, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
-for file in ~/.{aliases,kubernetes_profile}; do
+for file in ~/.{aliases,kubernetes_profile,terraform_profile}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file

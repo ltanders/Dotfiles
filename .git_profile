@@ -7,7 +7,6 @@ if hash hub 2>/dev/null; then
   alias git=hub
 fi
 
-# git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 alias gp='git push'
