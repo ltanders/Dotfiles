@@ -31,6 +31,8 @@ set guioptions-=L
 set background=dark
 colorscheme murphy
 
+" Disable bell
+set belloff=all
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
